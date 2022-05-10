@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 10px 5px 10px 20px;
+  min-height: 100vh;
+  width: 100vw;
+  color: #20203C;
+  margin: auto;
+  background-image: linear-gradient(to right, #e2e3ec, #e2e3ec1e),
+    url(./photos/bgLogo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Oleo Script', cursive;
+  position: relative;
+  z-index: -10;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.myPhoto {
+  opacity: 0.65;
+  height: 65vh;
+  min-height: 550px;
+  border-radius: 20px;
+  z-index: 1;
+  position: absolute;
+  bottom: -75px;
+  left: 50px;
+  transition: 0.5s ease-in-out;
+}
+
+.image {
+  margin-right: 5vw;
+}
+
+.backgroundImage {
+  position: fixed;
+  bottom: -50px;
+  left: -50px;
+  z-index: 1;
+  transform: rotate(3deg);
+  width: 2000px;
+  height: 135px;
+  background-color: #ffffff;
+}
+
+/*** Header & Navigation ***/
+
+header {
+  font-size: 16px;
+}
+
+nav,
+.middleSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftNav li {
+  padding-right: 28px;
+}
+
+nav div li {
+  list-style: none;
+  margin-right: 3vw;
+  transition: .5s ease-in-out;
+}
+
+nav div li a {
+  text-decoration: none;
+color: #20203C;
+  font-weight: 500;
+}
+
+nav div li a:hover {
+  color: #b9811f;
+}
+
+.contact a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.contact {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  padding: 10px 30px;
+  background-color: #20203ce8;
+  color: rgb(255, 255, 255);
+  transition: 1s ease-in-out;
+}
+
+.contact:hover{
+  background-color: #be8c35;
+}
+
+.decoLine{
+  width: 5px;
+  height: 40px;
+  background: #b9811f;
+  margin-right: 5px;
+  transform: rotate(30deg);
+}
+
+/*** Main ***/
+
+main {
+  visibility: hidden;
+  animation-name: mainSection;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  min-height: 80vh;
+}
+
+@keyframes mainSection {
+  0% {
+    visibility: visible;
+    opacity: 0;
+    position: relative;
+    top: 15px;
+  }
+
+  100% {
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+    top: 0px;
+  }
+}
+
+.aboutMyself {
+  font-size: 35px;
+  margin-top: 18vh;
+  margin-bottom: 25px;
+}
+
+.aboutProfession {
+  font-size: 70px;
+  font-weight: 600;
+  letter-spacing: -0.64px;
+  margin-bottom: 25px;
+  color: #9e7329;
+}
+
+.description {
+  font-size: 21px;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  text-align: justify;
+  margin-bottom: 35px;
+  max-width: 800px;
+}
+
+.learnMore {
+  font-size: 21px;
+}
+
+.learnMore a {
+  text-decoration: none;
+  color: #9e7329;
+}
+
+
+
+/*** ThemeIcon  and social media icon***/
+
+
+.themeIcon .fas{
+  color: #9e7329;
+  font-size: 30px;
+  background-color: #6b6b6b67;
+  padding: 7.5px 15px;
+  margin-bottom: 3px;
+  border-start-start-radius: 50%;
+  border-end-start-radius: 50%;
+  transition: .5s ease-in-out;
+}
+
+.themeIcon{
+  position: fixed;
+  right: 0px;
+  top: 100px;
+}
+
+.socialMediaIcon{
+  position: fixed;
+  right: 0px;
+  top: 250px;
+}
+
+.socialMediaIcon p a{
+  color:#9e7329;
+  font-size: x-large;
+  transition: .5s ease-in-out;
+}
+
+.socialMediaIcon p a:hover, .themeIcon .fas:hover{
+  color:#20203C;
+  cursor: pointer;
+}
+
+.socialMediaIcon p{
+  padding:  5px 10px;
+  margin-bottom: 3px;
+  background-color: #6b6b6b67;
+
+  border-start-start-radius: 50%;
+  border-end-start-radius: 50%;
+}
+
+
+
+
+
+
+
+/*** footer ***/
+
+footer {
+  height: 75px;
+  position: fixed;
+  bottom: -50px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: #20203C;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+  animation-name: footer;
+  animation-duration: 0.75s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  transition: 2s ease-in-out;
+  z-index: 10;
+}
+
+.right-footer {
+  display: flex;
+}
+
+.right-footer p {
+  margin-left: 30px;
+  transition: 250ms ease-in-out;
+}
+
+.right-footer p a {
+  color: #9e7329;
+}
+
+.right-footer p:hover {
+  transform: scale(1.5);
+}
+
+@keyframes footer {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
