@@ -255,17 +255,28 @@ footer {
   display: flex;
 }
 
-.right-footer p {
-  margin-left: 30px;
-  transition: 250ms ease-in-out;
+footer div .fab p{
+  /* font-size: medium; */
+  font-family: 'Oleo Script', cursive;
+  font-weight: 400;
+  padding-left: 2.5px;
 }
 
-.right-footer p a {
-  color: #9e7329;
+footer div .fab{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  transition: .25s ease-in-out;
+  font-weight: bold;
+  font-size: large;
+  color: #20203C;
+
 }
 
-.right-footer p:hover {
-  transform: scale(1.5);
+footer div .fab:hover {
+  color:#9e7329;
+
 }
 
 @keyframes footer {

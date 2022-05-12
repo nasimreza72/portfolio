@@ -45,7 +45,15 @@ dayMode.addEventListener("click", (e) => {
 const photo = document.querySelector(".myPhoto");
 
 photo.onmousemove = function (e) {
-    var x = e.offsetX / 2;
+    var x = e.offsetX/2;
     photo.style.cssText = ` left: ${x}px;     
   `;
 };
+
+
+// photo.addEventListener("mouseover", e => {
+//     console.log(e.target);
+//     var x = e.offsetX/2;
+//         photo.style.cssText = ` left: ${x}px;     
+//       `;
+// })
