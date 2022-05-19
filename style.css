@@ -44,8 +44,10 @@ body {
   left: -50px;
   z-index: 1;
   transform: rotate(3deg);
-  width: 2000px;
-  height: 135px;
+  /* width: 2000px;
+  height: 135px; */
+  width: 130%;
+  height: 140px;
   background-color: #ffffff;
 }
 
@@ -251,7 +253,7 @@ footer {
   z-index: 10;
 }
 
-.right-footer {
+.left-footer {
   display: flex;
 }
 
@@ -286,5 +288,20 @@ footer div .fab:hover {
   to {
     bottom: 0px;
     opacity: 1;
+  }
+}
+
+
+/***** Media query *****/
+
+@media screen and (max-width:768px){
+
+  .rightSectionOfMain{
+    width: 100%;
+    font-size: xx-small;
+  }
+
+  footer p{
+    display: none;
   }
 }
