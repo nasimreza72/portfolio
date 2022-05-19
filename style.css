@@ -25,18 +25,13 @@ body {
 .myPhoto {
   opacity: 0.65;
   height: 65vh;
+  z-index: -1;
   min-height: 550px;
-  border-radius: 20px;
-  z-index: 1;
-  position: absolute;
-  bottom: -75px;
-  left: 50px;
+  position: fixed;
+  bottom: 90px;
   transition: 0.5s ease-in-out;
 }
 
-.image {
-  margin-right: 5vw;
-}
 
 .backgroundImage {
   position: fixed;
@@ -44,8 +39,6 @@ body {
   left: -50px;
   z-index: 1;
   transform: rotate(3deg);
-  /* width: 2000px;
-  height: 135px; */
   width: 130%;
   height: 140px;
   background-color: #ffffff;
@@ -82,7 +75,7 @@ nav div li {
 
 nav div li a {
   text-decoration: none;
-color: #20203C;
+  color: #20203C;
   font-weight: 500;
 }
 
@@ -102,13 +95,14 @@ nav div li a:hover {
   background-color: #20203ce8;
   color: rgb(255, 255, 255);
   transition: 1s ease-in-out;
+  border-radius: 5px;
 }
 
-.contact:hover{
+.contact:hover {
   background-color: #be8c35;
 }
 
-.decoLine{
+.decoLine {
   width: 5px;
   height: 40px;
   background: #b9811f;
@@ -127,7 +121,6 @@ main {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  min-height: 80vh;
 }
 
 @keyframes mainSection {
@@ -157,7 +150,9 @@ main {
   font-weight: 600;
   letter-spacing: -0.64px;
   margin-bottom: 25px;
-  color: #9e7329;
+  color: #9e7329c9;
+  line-height: 75px;
+  text-shadow: 0px 0px 1px #00000098;
 }
 
 .description {
@@ -167,10 +162,14 @@ main {
   text-align: justify;
   margin-bottom: 35px;
   max-width: 800px;
+  text-shadow: 0px 0px 1px #00000098;
+
 }
 
 .learnMore {
   font-size: 21px;
+  text-shadow: 0px 0px 1px #00000098;
+
 }
 
 .learnMore a {
@@ -183,7 +182,7 @@ main {
 /*** ThemeIcon  and social media icon***/
 
 
-.themeIcon .fas{
+.themeIcon .fas {
   color: #9e7329;
   font-size: 30px;
   background-color: #6b6b6b67;
@@ -191,34 +190,38 @@ main {
   margin-bottom: 3px;
   border-start-start-radius: 50%;
   border-end-start-radius: 50%;
+  text-shadow: 0px 0px 1px #000000a8;
   transition: .5s ease-in-out;
 }
 
-.themeIcon{
+.themeIcon {
   position: fixed;
   right: 0px;
   top: 100px;
 }
 
-.socialMediaIcon{
+.socialMediaIcon {
   position: fixed;
   right: 0px;
   top: 250px;
 }
 
-.socialMediaIcon p a{
-  color:#9e7329;
+.socialMediaIcon p a {
+  color: #9e7329;
   font-size: x-large;
   transition: .5s ease-in-out;
+  text-shadow: 0px 0px 1px #000000a8;
+
 }
 
-.socialMediaIcon p a:hover, .themeIcon .fas:hover{
-  color:#20203C;
+.socialMediaIcon p a:hover,
+.themeIcon .fas:hover {
+  color: #20203C;
   cursor: pointer;
 }
 
-.socialMediaIcon p{
-  padding:  5px 10px;
+.socialMediaIcon p {
+  padding: 5px 10px;
   margin-bottom: 3px;
   background-color: #6b6b6b67;
 
@@ -235,11 +238,12 @@ main {
 /*** footer ***/
 
 footer {
+  width: 100%;
   height: 75px;
   position: fixed;
   bottom: -50px;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   color: #20203C;
   font-weight: bold;
@@ -253,17 +257,20 @@ footer {
   z-index: 10;
 }
 
-.left-footer {
+.sub-footer {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-footer div .fab p{
+footer div .fab p {
   font-family: 'Oleo Script', cursive;
   font-weight: 400;
   padding-left: 2.5px;
+  
 }
 
-footer div .fab{
+footer div .fab {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -276,7 +283,7 @@ footer div .fab{
 }
 
 footer div .fab:hover {
-  color:#9e7329;
+  color: #9e7329;
 
 }
 
@@ -294,14 +301,73 @@ footer div .fab:hover {
 
 /***** Media query *****/
 
-@media screen and (max-width:768px){
+@media screen and (max-width:768px) {
 
-  .rightSectionOfMain{
-    width: 100%;
-    font-size: xx-small;
+  body {
+    padding: 10px 15px;
   }
 
-  footer p{
+  .middleSection {
     display: none;
   }
+
+  .rightSectionOfMain {
+    width: 100%;
+  }
+
+  .myPhoto {
+    opacity: .65;
+    height: 65vh;
+    min-height: 550px;
+    position: fixed;
+    bottom: 80px;
+    transition: 0.5s ease-in-out;
+  }
+
+  .contact {
+    padding: 7.5px 15px;
+    font-size: 15px;
+    position: relative;
+    left: 12px;
+  }
+
+  .aboutMyself {
+    font-size: 25px;
+    margin-top: 12vh;
+    margin-bottom: 10px;
+  }
+
+  .aboutProfession {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 50px;
+    letter-spacing: -0.64px;
+    margin-top: 27vh;
+    color: #9e7329;
+  }
+
+
+  .description {
+    font-size: 17px;
+    line-height: 23px;
+    letter-spacing: 0.2px;
+    text-align: justify;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .themeIcon .fas {
+    font-size: 20px;
+  }
+
+  .socialMediaIcon p a {
+    font-size: 17px;
+
+  }
+
+  footer p {
+    display: none;
+  }
+
+
 }
