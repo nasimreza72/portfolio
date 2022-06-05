@@ -8,8 +8,7 @@
 body {
   padding: 10px 5px 10px 20px;
   min-height: 100vh;
-  width: 100vw;
-  color: #20203C;
+  color: #3a3a3ad2;
   margin: auto;
   background-image: linear-gradient(to right, #e2e3ec, #e2e3ec1e),
     url(./photos/bgLogo.png);
@@ -18,8 +17,9 @@ body {
   font-family: 'Oleo Script', cursive;
   position: relative;
   z-index: -10;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+  box-shadow: rgba(139, 139, 139, 0.25) 0px 30px 60px -12px inset,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    transition: 1s ease-in-out;
 }
 
 .myPhoto {
@@ -29,6 +29,7 @@ body {
   min-height: 550px;
   position: fixed;
   bottom: 90px;
+  left: 50px;
   transition: 0.5s ease-in-out;
 }
 
@@ -75,31 +76,17 @@ nav div li {
 
 nav div li a {
   text-decoration: none;
-  color: #20203C;
-  font-weight: 500;
+  color: #9e7329 ;
+  font-weight: 800;
+}
+
+nav div h3 {
+  color: #9e7329 ;
 }
 
 nav div li a:hover {
-  color: #b9811f;
-}
+  color: #d3a14b;
 
-.contact a {
-  color: whitesmoke;
-  text-decoration: none;
-}
-
-.contact {
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-  padding: 10px 30px;
-  background-color: #20203ce8;
-  color: rgb(255, 255, 255);
-  transition: 1s ease-in-out;
-  border-radius: 5px;
-}
-
-.contact:hover {
-  background-color: #be8c35;
 }
 
 .decoLine {
@@ -123,6 +110,7 @@ main {
   width: 100%;
 }
 
+
 @keyframes mainSection {
   0% {
     visibility: visible;
@@ -145,13 +133,23 @@ main {
   margin-bottom: 25px;
 }
 
+.drawLine{
+  width: 150px;
+  height: 7px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  background-color: #3a3a3ad2;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+  rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  transition: 1s ease-in-out;
+}
+
 .aboutProfession {
-  font-size: 70px;
-  font-weight: 600;
+  font-size: 50px;
+  font-weight: 500;
   letter-spacing: -0.64px;
   margin-bottom: 25px;
-  color: #9e7329c9;
-  line-height: 75px;
+  line-height: 55px;
   text-shadow: 0px 0px 1px #00000098;
 }
 
@@ -166,15 +164,25 @@ main {
 
 }
 
-.learnMore {
+.getInTouch, .contact{
+  width: fit-content;
+  padding: 5px 30px;
   font-size: 21px;
   text-shadow: 0px 0px 1px #00000098;
-
+  background-color:#be8c35;
+  border-radius: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+  rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  transition: .5s ease-in-out;
 }
 
-.learnMore a {
+.getInTouch:hover , .contact:hover{
+  background-color: #9e7329 ;
+}
+.getInTouch a, .contact a{
   text-decoration: none;
-  color: #9e7329;
+  color: #fffffff5;
+  transition: 1s ease-in-out;
 }
 
 
@@ -196,7 +204,7 @@ main {
 
 .themeIcon {
   position: fixed;
-  right: 0px;
+  right:0px;
   top: 100px;
 }
 
@@ -210,11 +218,9 @@ main {
   color: #9e7329;
   font-size: x-large;
   transition: .5s ease-in-out;
-  text-shadow: 0px 0px 1px #000000a8;
-
 }
 
-.socialMediaIcon p a:hover,
+  .socialMediaIcon p a:hover,
 .themeIcon .fas:hover {
   color: #20203C;
   cursor: pointer;
@@ -230,11 +236,6 @@ main {
 }
 
 
-
-
-
-
-
 /*** footer ***/
 
 footer {
@@ -245,10 +246,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #20203C;
-  font-weight: bold;
-  letter-spacing: 1px;
-  font-size: 1.1rem;
   animation-name: footer;
   animation-duration: 0.75s;
   animation-delay: 0.5s;
@@ -265,9 +262,8 @@ footer {
 
 footer div .fab p {
   font-family: 'Oleo Script', cursive;
-  font-weight: 400;
   padding-left: 2.5px;
-  
+  font-weight: 400;
 }
 
 footer div .fab {
@@ -278,12 +274,12 @@ footer div .fab {
   transition: .25s ease-in-out;
   font-weight: bold;
   font-size: large;
-  color: #20203C;
-
+  color: #9e7329;
 }
 
 footer div .fab:hover {
-  color: #9e7329;
+  color: #3a3a3ad2;
+
 
 }
 
@@ -311,39 +307,44 @@ footer div .fab:hover {
     display: none;
   }
 
-  .rightSectionOfMain {
-    width: 100%;
-  }
-
   .myPhoto {
     opacity: .65;
-    height: 65vh;
-    min-height: 550px;
+    height: 40vh;
+    min-height: 350px;
     position: fixed;
-    bottom: 80px;
+    bottom: 55px;
     transition: 0.5s ease-in-out;
   }
 
   .contact {
-    padding: 7.5px 15px;
+    padding: 5px 15px;
     font-size: 15px;
     position: relative;
     left: 12px;
   }
 
-  .aboutMyself {
-    font-size: 25px;
-    margin-top: 12vh;
-    margin-bottom: 10px;
+  .getInTouch {
+    padding: 5px 15px;
+    font-size: 15px;
   }
 
+   .aboutMyself {
+    font-size: 25px;
+    margin-top:7vh;
+    margin-bottom: 15px;
+  } 
+
   .aboutProfession {
-    font-size: 50px;
+    font-size: 35px;
     font-weight: 500;
-    line-height: 50px;
+    line-height: 40px;
     letter-spacing: -0.64px;
-    margin-top: 27vh;
-    color: #9e7329;
+    margin-bottom: 15px;
+  }
+
+  .drawLine{
+    height: 5px;
+    margin-bottom: 15px;
   }
 
 
@@ -352,7 +353,7 @@ footer div .fab:hover {
     line-height: 23px;
     letter-spacing: 0.2px;
     text-align: justify;
-    width: 100%;
+    width: 90%;
     margin-bottom: 15px;
   }
 
@@ -365,9 +366,18 @@ footer div .fab:hover {
 
   }
 
+  .backgroundImage {
+    height: 110px;
+  }
+  
+
   footer p {
     display: none;
   }
+
+  footer {
+  height: 55px;
+}
 
 
 }
