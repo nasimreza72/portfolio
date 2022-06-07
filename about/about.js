@@ -38,12 +38,3 @@ document.getElementById("menu-toggle").addEventListener("click", function () {
     toggelHandeler = true;
   }
 });
-
-// middleSectionNav.style.cssText =
-//  ` position: fixed;
-//     display: block;
-//     top:50px;
-//     right:0px;
-//     padding: 50px;
-//     background: white;
-//     border-radius: 5px`
