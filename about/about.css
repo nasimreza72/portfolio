@@ -19,7 +19,7 @@ body {
   z-index: -1;
   box-shadow: rgba(139, 139, 139, 0.25) 0px 30px 60px -12px inset,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-  transition: 1s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 
@@ -176,6 +176,27 @@ nav div li a:hover {
   margin-right: 6px;
   border-radius: 4px;
   transform: rotate(30deg);
+}
+
+.myCV {
+  width: fit-content;
+  padding: 5px 30px;
+  font-size: 21px;
+  text-shadow: 0px 0px 1px #00000098;
+  background-color: #be8c35;
+  border-radius: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  transition: 0.5s ease-in-out;
+}
+
+.myCV:hover {
+  background-color: #9e7329;
+}
+.myCV a {
+  text-decoration: none;
+  color: #fffffff5;
+  transition: 1s ease-in-out;
 }
 
 /*** Main ***/
@@ -394,6 +415,12 @@ footer div .fab:hover {
     left: 20px;
     transition: 0.5s ease-in-out;
   }
+
+  .myCV {
+    padding: 5px 15px;
+    font-size: 15px;
+  }
+
 
   .themeIcon .fas {
     font-size: 20px;
