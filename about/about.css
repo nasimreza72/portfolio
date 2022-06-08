@@ -8,18 +8,18 @@
 body {
   min-height: 100vh;
   padding: 10px 5px 10px 20px;
-  color: #212e3bc9;
-  margin: auto;
   background-image: linear-gradient(to right, #e2e3ec, #e2e3ec1e),
-    url(./photos/bgLogo.png);
+    url(../photos/body.png);
+
+  color: #212e3be5;
+  margin: auto;
   background-repeat: no-repeat;
   background-position: center;
   font-family: "Oleo Script", cursive;
-  position: relative;
   z-index: -1;
   box-shadow: rgba(139, 139, 139, 0.25) 0px 30px 60px -12px inset,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-  transition: 1s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 
@@ -124,7 +124,7 @@ nav,
   letter-spacing: 2px;
 }
 
-.homeNav{
+.aboutNav{
   font-size: 40px;
 }
 
@@ -138,18 +138,6 @@ nav,
     opacity: 1;
   }
 }
-
-.myPhoto {
-  opacity: 0.65;
-  height: 65vh;
-  z-index: -1;
-  min-height: 550px;
-  position: fixed;
-  bottom: 90px;
-  left: 100px;
-  transition: 0.5s ease-in-out;
-}
-
 
 .leftNav {
   display: flex;
@@ -190,75 +178,7 @@ nav div li a:hover {
   transform: rotate(30deg);
 }
 
-/*** Main ***/
-
-main {
-  visibility: hidden;
-  animation-name: mainSection;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-}
-
-@keyframes mainSection {
-  0% {
-    visibility: visible;
-    opacity: 0;
-    position: relative;
-    top: 15px;
-  }
-
-  100% {
-    visibility: visible;
-    opacity: 1;
-    position: relative;
-    top: 0px;
-  }
-}
-
-.rightSectionOfMain {
-  margin-left: 300px;
-}
-
-.aboutMyself {
-  font-size: 35px;
-  margin-top: 18vh;
-  margin-bottom: 25px;
-}
-
-.drawLine {
-  width: 150px;
-  height: 7px;
-  border-radius: 10px;
-  margin-bottom: 25px;
-  background-color: #212e3bc9;
-  transition: 1s ease-in-out;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 1.5px 4px;
-
-}
-
-.aboutProfession {
-  font-size: 50px;
-  font-weight: 500;
-  letter-spacing: -0.64px;
-  margin-bottom: 25px;
-  line-height: 55px;
-}
-
-.description {
-  width: 90%;
-  font-size: 21px;
-  line-height: 30px;
-  letter-spacing: 0.2px;
-  text-align: justify;
-  margin-bottom: 35px;
-  max-width: 800px;
-}
-
-.getInTouch {
+.myCV {
   width: fit-content;
   padding: 5px 30px;
   font-size: 21px;
@@ -270,14 +190,63 @@ main {
   transition: 0.5s ease-in-out;
 }
 
-.getInTouch:hover {
+.myCV:hover {
   background-color: #9e7329;
 }
-.getInTouch a {
+.myCV a {
   text-decoration: none;
   color: #fffffff5;
   transition: 1s ease-in-out;
 }
+
+/*** Main ***/
+
+.myPhoto {
+  opacity: 0.85;
+  height: 65vh;
+  z-index: 1;
+  min-height: 550px;
+  position: fixed;
+  bottom: 90px;
+  left: 100px;
+  transition: 0.5s ease-in-out;
+}
+
+
+.aboutMySelf{
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutMySelf .leftMain{
+  width: 40vw;
+}
+
+.aboutMySelf .rightMain{
+  width: 45%;
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 700px;
+  background-color: rgba(255, 255, 255, 0.911);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.aboutMySelf .rightMain h3{ 
+font-size: 30px;
+margin-bottom: 15px;
+}
+
+.aboutMySelf .rightMain p{ 
+  font-size: 17px;
+  word-spacing: 2px;
+  text-align: justify;
+  margin-bottom: 15px;
+  }
+
+
 
 /*** ThemeIcon  and social media icon***/
 
@@ -401,20 +370,44 @@ footer div .fab:hover {
     font-size: large;
   }
 
- .toggelNav .homeNav{
+ .toggelNav .aboutNav{
     font-size: 25px;
   }
 
-  .rightSectionOfMain {
-    margin-left: 10px;
-  }
+  
 
   .middleSectionNav {
     display: none;
   }
 
+ .aboutMySelf{
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 100px;
+ }
+
+ .aboutMySelf .rightMain{
+  width: 100%;
+}
+
+.aboutMySelf .leftMain{
+  width: 0px;
+}
+
+.aboutMySelf .rightMain h3{ 
+  font-size: 20px;
+  margin-bottom: 10px;
+  }
+  
+  .aboutMySelf .rightMain p{ 
+    font-size: 15px;
+    word-spacing: 1px;
+    text-align: justify;
+    margin-bottom: 15px;
+    }
+  
   .myPhoto {
-    opacity: 0.65;
+    opacity: 0.7;
     height: 35vh;
     min-height: 300px;
     position: fixed;
@@ -423,38 +416,11 @@ footer div .fab:hover {
     transition: 0.5s ease-in-out;
   }
 
-  .getInTouch {
+  .myCV {
     padding: 5px 15px;
     font-size: 15px;
   }
 
-  .aboutMyself {
-    font-size: 25px;
-    margin-top: 10vh;
-    margin-bottom: 15px;
-  }
-
-  .aboutProfession {
-    font-size: 35px;
-    font-weight: 500;
-    line-height: 40px;
-    letter-spacing: -0.64px;
-    margin-bottom: 15px;
-  }
-
-  .drawLine {
-    height: 5px;
-    margin-bottom: 15px;
-  }
-
-  .description {
-    font-size: 17px;
-    line-height: 23px;
-    letter-spacing: 0.2px;
-    text-align: justify;
-    width: 90%;
-    margin-bottom: 15px;
-  }
 
   .themeIcon .fas {
     font-size: 20px;

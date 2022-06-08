@@ -3,9 +3,9 @@ const nightMode = document.querySelector(".fa-moon");
 const dayMode = document.querySelector(".fa-sun");
 
 nightMode.addEventListener("click", (e) => {
-  document.body.style.cssText = `background: radial-gradient(circle at 10% 20%, rgb(90, 92, 106) 0%, rgb(32, 45, 58) 81.3%);
-                                color: #ffffffd5`;
+  document.body.style.cssText = `background: radial-gradient(circle at 10% 20%, rgb(90, 92, 106) 0%, rgb(32, 45, 58) 81.3%);`;
   document.querySelector(".drawLine").style.background = "#ffffffd5";
+
 });
 
 dayMode.addEventListener("click", (e) => {
@@ -13,6 +13,7 @@ dayMode.addEventListener("click", (e) => {
         transition: 1s ease-in-out;
       `;
   document.querySelector(".drawLine").style.background = "#212e3bc9";
+
 });
 
 const photo = document.querySelector(".myPhoto");
@@ -38,12 +39,3 @@ document.getElementById("menu-toggle").addEventListener("click", function () {
     toggelHandeler = true;
   }
 });
-
-// middleSectionNav.style.cssText =
-//  ` position: fixed;
-//     display: block;
-//     top:50px;
-//     right:0px;
-//     padding: 50px;
-//     background: white;
-//     border-radius: 5px`
