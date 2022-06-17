@@ -10,7 +10,7 @@ nightMode.addEventListener("click", (e) => {
 
 dayMode.addEventListener("click", (e) => {
   document.body.style.cssText = `background-image: linear-gradient(to right, #e2e3ec, #e2e3ec1e),url(./photos/bgLogo.png), color: #20203C;;
-        transition: 1s ease-in-out;
+        transition: .5s ease-in-out;
       `;
   document.querySelector(".drawLine").style.background = "#212e3bc9";
 
