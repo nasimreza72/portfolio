@@ -31,7 +31,9 @@ body {
   transform: rotate(2deg);
   width: 130%;
   height: 140px;
-  background-color: white;
+  background: url(../photos/pngegg.png), rgb(233, 233, 233);
+  background-position:95% 95%;
+  background-size: 200;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 /* ------hamburger menu ---------*/
@@ -176,6 +178,12 @@ nav div li a:hover {
   margin-right: 6px;
   border-radius: 4px;
   transform: rotate(30deg);
+}
+
+.contactNav{
+  font-size: 35px;
+  position: relative;
+  right: 20px;
 }
 
 
@@ -546,7 +554,7 @@ footer div .fab:hover {
     width: 100%;
     min-width: 300px;
     height: fit-content;
-    padding: 20px 10px;
+    padding: 10px;
     flex-direction: column;
   }
   
