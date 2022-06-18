@@ -25,13 +25,15 @@ body {
 
 .backgroundImage {
   position: fixed;
-  bottom: -50px;
+  bottom: -60px;
   left: -50px;
   z-index: 1;
   transform: rotate(3deg);
   width: 130%;
   height: 140px;
-  background-color: white;
+  background: url(./photos/pngegg.png), rgb(233, 233, 233);
+  background-position:95% 88%;
+  background-size: 200;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 /* ------hamburger menu ---------*/
@@ -146,7 +148,7 @@ nav,
   min-height: 550px;
   position: fixed;
   bottom: 90px;
-  left: 100px;
+  left: 200px;
   transition: 0.5s ease-in-out;
 }
 
@@ -414,11 +416,11 @@ footer div .fab:hover {
   }
 
   .myPhoto {
-    opacity: 0.65;
+    opacity: 0.75;
     height: 35vh;
     min-height: 300px;
     position: fixed;
-    bottom: 55px;
+    bottom: 45px;
     left: 20px;
     transition: 0.5s ease-in-out;
   }

@@ -3,7 +3,7 @@ const nightMode = document.querySelector(".fa-moon");
 const dayMode = document.querySelector(".fa-sun");
 
 nightMode.addEventListener("click", (e) => {
-  document.body.style.cssText = `background: radial-gradient(circle at 10% 20%, rgb(90, 92, 106) 0%, rgb(32, 45, 58) 81.3%);`;
+  document.body.style.cssText = `background: radial-gradient(circle at 10% 20%, rgb(90, 92, 106) 0%, rgb(32, 45, 58) 81.3%)`;
   document.querySelector(".drawLine").style.background = "#ffffffd5";
 
 });
