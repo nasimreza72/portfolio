@@ -1,15 +1,17 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: content-box;
+  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
 body {
   min-height: 100vh;
-  background-image: linear-gradient(to right, #ffffffe7, #f1f0f0e3),
+  padding: 10px 5px 10px 20px;
+  background-image: linear-gradient(to right, #e2e3ec, #e2e3ec1e),
     url(../photos/body.png);
-  color: #142d4c;
+
+  color: #212e3be5;
   margin: auto;
   background-repeat: no-repeat;
   background-position: center;
@@ -17,12 +19,13 @@ body {
   z-index: -1;
   box-shadow: rgba(139, 139, 139, 0.25) 0px 30px 60px -12px inset,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-  transition: 0.5s ease-in-out;
+  transition: .5s ease-in-out;
 }
+
 
 .backgroundImage {
   position: fixed;
-  bottom: -80px;
+  bottom: -75px;
   left: -50px;
   z-index: 1;
   transform: rotate(2deg);
@@ -79,16 +82,11 @@ header {
   left: 0px;
   width: 100%;
   z-index: 100;
+  padding: 5px 20px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px 10px;
-}
-
+nav,
 .middleSectionNav {
   display: flex;
   justify-content: space-between;
@@ -126,7 +124,9 @@ nav {
   letter-spacing: 2px;
 }
 
-
+.aboutNav{
+  font-size: 40px;
+}
 
 @keyframes toggelNavAnimation {
   from {
@@ -139,18 +139,14 @@ nav {
   }
 }
 
-.leftSideNav {
+.leftNav {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 150px;
-  height: 100%;
 }
 
-.leftSideNav h3 {
-  font-size: 20px;
-  position: relative;
-  top: 5px;
+.leftNav li {
+  padding-right: 28px;
 }
 
 nav div li {
@@ -159,18 +155,11 @@ nav div li {
   transition: 0.5s ease-in-out;
 }
 
-.middleSectionNav li a {
+nav div li a {
   text-decoration: none;
   color: #212e3be0;
   font-weight: 800;
 }
-
-.subToggelNav li a {
-  text-decoration: none;
-  color: #212e3be0;
-  font-weight: 800;
-}
-
 
 nav div h3 {
   color: #212e3be0;
@@ -178,10 +167,6 @@ nav div h3 {
 
 nav div li a:hover {
   color: #c48822;
-}
-
-.workNav {
-  font-size: 40px;
 }
 
 .navDecoLine {
@@ -193,71 +178,142 @@ nav div li a:hover {
   transform: rotate(30deg);
 }
 
+
+
 /*** Main ***/
 
 main {
-  padding: 100px 50px;
-}
-
-.portfolioText {
-  display: flex;
-  align-items: center;
-}
-
-.portfolioText .decoLine {
-  width: 50px;
-  height: 5px;
-  border-radius: 2px;
-  margin-right: 10px;
-  background: #142d4c;
-  transition: 0.5s ease-in-out;
-}
-
-.portfolioText h4 {
-  font-size: 30px;
-  font-weight: 500;
-}
-
-.workedOnText {
-  margin: 30px 0px;
-  font-size: 55px;
-  line-height: 60px;
-  font-weight: 500;
-}
-
-.projects {
-  margin-bottom: 200px;
   width: 100%;
-  min-width: 800px;
-  height: 400px;
+  min-height: 900px;
   border-radius: 20px;
-  display: flex;
-  background: radial-gradient(
-    circle at 10% 20%,
-    rgba(90, 92, 106, 0.295) 0%,
-    rgba(32, 45, 58, 0) 81.3%
-  );
-  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
-    rgba(17, 17, 26, 0.05) 0px 8px 32px;
-}
-
-.leftSideOfProjects {
-  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  position: relative;
 }
 
-.roundedBG{
+.mainContact{
+  width: 80%;
+  min-width: 768px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: rgba(12, 12, 12, 0.425) 0px 3px 6px, rgba(131, 131, 131, 0.23) 0px 3px 6px;
+  background: linear-gradient(to right, #7c7c7cc0 0%, #8b8b8bc7 100%);
+}
+
+.subMainContactLeft{
+  background: linear-gradient(110.3deg, rgb(226, 151, 80) 8.7%, rgb(214, 126, 106) 47.5%, rgba(182, 81, 96, 0.726) 89.1%);
+  position: relative;
+  overflow: hidden;
+  width: 50%;
+  height: 100%;
+  min-width: 380px;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  z-index: 0;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+}
+
+.subMainContactRight{
+  width: 50%;
+  min-width: 350px;
+  height: 90%;
+  padding: 20px;
+  background: #ffffffda;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+
+}
+
+.form-contact{
+  width: 100%;
+  height: 100%;
+}
+
+.form-name, .form-email, .form-message{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.form-contact input{
+  width: 100%;
+  height: 25px;
+  border: none;
+  outline: none;
+  font-size: 22px;
+  background: transparent;
+
+}
+
+.form-contact textarea{
+  width: 100%;
+  height: 180px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  background: transparent;
+}
+
+.form-submitButton{
+  background: linear-gradient(to right, rgb(121, 204, 72), rgb(51, 139, 147));
+  width: 200px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  float: right;
+  transition: .5s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+
+.form-submitButton input{
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.form-submitButton input:hover{
+  color: black;
+}
+
+
+.description{
+  width: 60%;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+
+.subMainContactLeft p {
+  font-size: 20px;
+  padding: 5px;
+}
+
+.subMainContactLeft p i{
+ font-size: 25px;
+ padding-right: 8px;
+}
+
+.subMainContactLeft p .pinEmoji {
+
+  font-size: 25px;
+ }
+
+ .roundedBG{
   width: 150px;
   height: 150px;
   background: linear-gradient(110.3deg, rgb(238, 179, 123) 8.7%, rgb(216, 103, 77) 47.5%, rgb(114, 43, 54) 89.1%);
   border-radius: 50%;
   position: absolute;
-  bottom: 0px;
-  right: -50px;
+  bottom: -30px;
+  right: -30px;
   z-index: -1;
  }
 
@@ -319,82 +375,33 @@ main {
  }
 
 
-.subLeftSideProjects {
-  padding-left: 50px;
-}
-
-.rightSideOfProjects {
-  width: 50%;
-  height: 100%;
+.contactText {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  align-items: center;
 }
 
-.projectDescription {
-  width: 90%;
-  color: #505050;
-  font-size: 17px;
-  margin-bottom: 20px;
-  text-align: justify;
-  letter-spacing: 0.45px;
-  line-height: 20px;
-  font-weight: lighter;
-  z-index: 1;
-}
-
-.usedTechnology {
-  display: flex;
-  margin-bottom: 20px;
-  color: #b9811f;
-}
-
-.usedTechnology li {
-  list-style: none;
+.contactText .decoLine {
+  width: 50px;
+  height: 5px;
+  border-radius: 2px;
   margin-right: 10px;
-  font-weight: bolder;
-  font-size: 16px;
-  font-weight: lighter;
-}
-
-.projectLink a {
-  text-decoration: none;
-  margin-right: 10px;
-  font-size: 20px;
-  color: #20203c;
+  background: #ffffff;
   transition: 0.5s ease-in-out;
 }
 
-.featuredProjects {
-  font-size: 23px;
+.contactText h4 {
+  font-size: 30px;
+  font-weight: 500;
 }
 
-.projectTitle {
-  font-size: 45px;
-  margin-bottom: 10px;
+.workedOnText {
+  margin: 30px 0px;
+  font-size: 55px;
+  line-height: 60px;
+  font-weight: 500;
 }
 
-.carousel {
-  width: 800px;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  border-radius: 10px;
-}
 
-.carousel img {
-  border-radius: 10px;
-}
-.carousel a span {
-  width: 40px;
-  height: 25px;
-  border-radius: 5px;
-  z-index: 200;
-  background-color: rgba(0, 0, 0, 0.473);
-}
-
-.carousel li {
-  background-color: black;
-}
 
 /*** ThemeIcon  and social media icon***/
 
@@ -408,12 +415,14 @@ main {
   border-end-start-radius: 50%;
   transition: 0.5s ease-in-out;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 1.5px 4px;
+
 }
 
 .themeIcon {
   position: fixed;
   right: 0px;
   top: 100px;
+  
 }
 
 .socialMediaIcon {
@@ -441,6 +450,7 @@ main {
   border-start-start-radius: 50%;
   border-end-start-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 1.5px 4px;
+
 }
 
 /*** footer ***/
@@ -469,8 +479,6 @@ footer {
 
 footer div .fab p {
   font-family: "Oleo Script", cursive;
-  position: relative;
-  top: 7px;
   padding-left: 2.5px;
   font-weight: 400;
 }
@@ -507,10 +515,6 @@ footer div .fab:hover {
   body {
     padding: 10px 15px;
   }
-
-  .backgroundImage {
-    bottom: -60px;
-  }
   .toggelNav {
     width: 120px;
     bottom: 95px;
@@ -521,12 +525,145 @@ footer div .fab:hover {
     font-size: large;
   }
 
-  .subToggelNav .workNav {
+ .toggelNav .contactNav{
     font-size: 25px;
   }
 
   .middleSectionNav {
     display: none;
+  }
+
+  main {
+    width: 100%;
+    min-height: 900px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .mainContact{
+    width: 100%;
+    min-width: 300px;
+    height: fit-content;
+    padding: 20px 10px;
+    flex-direction: column;
+  }
+  
+  .subMainContactLeft{
+    width: 100%;
+    min-width: 300px;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    z-index: 0;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+  }
+  
+  .subMainContactRight{
+    margin-top: 10px;
+    width: 100%;
+    min-width: 300px;
+    padding: 10px;
+    background: #ffffffda;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+  
+  }
+  
+
+  .form-name, .form-email, .form-message{
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .form-contact input{
+    width: 100%;
+    height: 20px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background: transparent;
+  
+  }
+  
+  .form-contact textarea{
+    width: 100%;
+    height: 140px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    background: transparent;
+  }
+  
+  .form-submitButton{
+    width: 130px;
+    padding:7px 12px;
+    margin-top: 5px;
+  }
+  
+  
+  .form-submitButton input{
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  
+  .description{
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  
+  .subMainContactLeft p {
+    font-size: 18px;
+    padding: 5px;
+  }
+  
+  .subMainContactLeft p i{
+   font-size: 20px;
+   padding-right: 8px;
+  }
+  
+  .subMainContactLeft p .pinEmoji {
+    font-size: 20px;
+   }
+  
+   .roundedBG{
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(110.3deg, rgb(238, 179, 123) 8.7%, rgb(216, 103, 77) 47.5%, rgb(114, 43, 54) 89.1%);
+    border-radius: 50%;
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+    z-index: -1;
+   }
+  
+  .contactText {
+    display: flex;
+    align-items: center;
+  }
+  
+  .contactText .decoLine {
+    width: 40px;
+    height: 4px;
+  }
+  
+  .contactText h4 {
+    font-size: 25px;
+    font-weight: 500;
+  }
+  
+  .workedOnText {
+    margin: 10px 0px;
+    font-size: 35px;
+    line-height: 35px;
+    font-weight: 500;
   }
 
   .themeIcon .fas {
@@ -538,100 +675,7 @@ footer div .fab:hover {
   }
 
   .backgroundImage {
-    height: 110px;
-  }
-
-  main {
-    padding: 70px 10px 10px 10px;
-  }
-
-  .portfolioText h4{
-    font-size: 25px;
-  }
-
-  .workedOnText {
-    margin: 10px 0px 20px 0px;
-    font-size: 35px;
-    line-height: 35px;
-  }
-
-  .projects {
-    min-width: 300px;
-    height: fit-content;
-    background-color: none;
-    flex-direction: column;
-    margin-bottom: 50px;
-  }
-
-  .leftSideOfProjects {
-    width: 100%;
-    margin: 20px 0px;
-  }
-
-  .roundedBG{
-    width: 100px;
-    height: 100px;
-    background: linear-gradient(110.3deg, rgb(238, 179, 123) 8.7%, rgb(216, 103, 77) 47.5%, rgb(114, 43, 54) 89.1%);
-    border-radius: 50%;
-    position: absolute;
-    bottom: -50px;
-    right: 0px;
-    z-index: -1;
-   }
-
-
-  .featuredProjects {
-    font-size: 20px;
-  }
-
-  .projectTitle {
-    font-size: 30px;
-  }
-
-  .usedTechnology {
-    display: flex;
-    margin-bottom: 5px;
-  }
-
-  .usedTechnology li {
-    margin-right: 8px;
-    font-size: 15px;
-  }
-
-  .projectDescription {
-    width: 100%;
-    margin-bottom: 10px;
-    letter-spacing: normal;
-  }
-
-  .subLeftSideProjects {
-    padding: 10px;
-  }
-
-  .rightSideOfProjects {
-    width: 100%;
-  }
-
-  .carousel {
-    width: 100%;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-      rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    border-radius: 10px;
-  }
-
-  .carousel img {
-    border-radius: 10px;
-  }
-  .carousel a span {
-    width: 40px;
-    height: 25px;
-    border-radius: 5px;
-    z-index: 200;
-    background-color: rgba(0, 0, 0, 0.473);
-  }
-
-  .carousel li {
-    background-color: black;
+    height: 125px;
   }
 
   footer p {
