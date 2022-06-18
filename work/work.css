@@ -28,7 +28,9 @@ body {
   transform: rotate(2deg);
   width: 130%;
   height: 140px;
-  background-color: white;
+  background: url(../photos/pngegg.png), rgb(233, 233, 233);
+  background-position:95% 88%;
+  background-size: 200;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 /* ------hamburger menu ---------*/

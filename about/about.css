@@ -29,7 +29,9 @@ body {
   transform: rotate(3deg);
   width: 130%;
   height: 140px;
-  background-color: white;
+  background: url(../photos/pngegg.png), rgb(233, 233, 233);
+  background-position:95% 88%;
+  background-size: 200;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 /* ------hamburger menu ---------*/
@@ -177,6 +179,8 @@ nav div li a:hover {
 .myCV {
   width: fit-content;
   padding: 5px 30px;
+  margin-top: 25px;
+  float: right;
   font-size: 21px;
   text-shadow: 0px 0px 1px #00000098;
   background-color: #be8c35;
@@ -300,8 +304,9 @@ nav div li a:hover {
   width: 45%;
   padding: 20px;
   border-radius: 20px;
+  z-index: 1;
   max-width: 700px;
-  background-color: rgba(255, 255, 255, 0.911);
+  background-color: rgba(255, 255, 255, 0.89);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
@@ -481,6 +486,7 @@ footer div .fab:hover {
   }
 
   .myCV {
+    margin-top: 5px;
     padding: 5px 15px;
     font-size: 15px;
   }
