@@ -29,10 +29,11 @@ body {
   width: 130%;
   height: 140px;
   background: url(../photos/pngegg.png), rgb(233, 233, 233);
-  background-position:95% 88%;
+  background-position: 95% 88%;
   background-size: 200;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
 /* ------hamburger menu ---------*/
 
 .menu-toggle {
@@ -55,18 +56,23 @@ body {
   background: #b9811f;
   transition: all 0.3s ease;
 }
+
 .menu-toggle-bar.menu-toggle-bar--top {
   transform: translate(0, -8px);
 }
+
 .menu-toggle-bar.menu-toggle-bar--bottom {
   transform: translate(0, 8px);
 }
+
 .nav-open .menu-toggle-bar.menu-toggle-bar--top {
   transform: translate(0, 0) rotate(45deg);
 }
+
 .nav-open .menu-toggle-bar.menu-toggle-bar--middle {
   opacity: 0;
 }
+
 .nav-open .menu-toggle-bar.menu-toggle-bar--bottom {
   transform: translate(0, 0) rotate(-45deg);
 }
@@ -234,11 +240,9 @@ main {
   height: 400px;
   border-radius: 20px;
   display: flex;
-  background: radial-gradient(
-    circle at 10% 20%,
-    rgba(90, 92, 106, 0.295) 0%,
-    rgba(32, 45, 58, 0) 81.3%
-  );
+  background: radial-gradient(circle at 10% 20%,
+      rgba(90, 92, 106, 0.295) 0%,
+      rgba(32, 45, 58, 0) 81.3%);
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
     rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
@@ -252,7 +256,7 @@ main {
   position: relative;
 }
 
-.roundedBG{
+.roundedBG {
   width: 150px;
   height: 150px;
   background: linear-gradient(110.3deg, rgb(238, 179, 123) 8.7%, rgb(216, 103, 77) 47.5%, rgb(114, 43, 54) 89.1%);
@@ -261,10 +265,10 @@ main {
   bottom: 0px;
   right: -50px;
   z-index: -1;
- }
+}
 
 
- .roundedBG2{
+.roundedBG2 {
   width: 50px;
   height: 50px;
   background: rgba(93, 197, 98, 0.863);
@@ -273,9 +277,9 @@ main {
   bottom: 130px;
   right: 180px;
   z-index: -1;
- }
+}
 
- .roundedBG3{
+.roundedBG3 {
   width: 30px;
   height: 30px;
   background: rgba(212, 195, 98, 0.801);
@@ -284,9 +288,9 @@ main {
   bottom: 360px;
   right: 280px;
   z-index: -1;
- }
+}
 
- .roundedBG4{
+.roundedBG4 {
   width: 45px;
   height: 45px;
   background: rgba(27, 104, 128, 0.541);
@@ -295,9 +299,9 @@ main {
   bottom: 480px;
   right: 80px;
   z-index: -1;
- }
+}
 
- .roundedBG5{
+.roundedBG5 {
   width: 55px;
   height: 55px;
   background: rgba(222, 173, 245, 0.541);
@@ -306,10 +310,10 @@ main {
   bottom: 30px;
   left: 80px;
   z-index: -1;
- }
+}
 
 
- .roundedBG6{
+.roundedBG6 {
   width: 25px;
   height: 25px;
   background: rgba(185, 110, 39, 0.767);
@@ -318,7 +322,7 @@ main {
   top: 80px;
   left: 80px;
   z-index: -1;
- }
+}
 
 
 .subLeftSideProjects {
@@ -343,6 +347,7 @@ main {
   line-height: 20px;
   font-weight: lighter;
   z-index: 1;
+  transition: .5s ease-in-out;
 }
 
 .usedTechnology {
@@ -385,7 +390,13 @@ main {
 
 .carousel img {
   border-radius: 10px;
+  height: 500px;
 }
+
+.carousel-indicators{
+  z-index: 1;
+}
+
 .carousel a span {
   width: 40px;
   height: 25px;
@@ -513,6 +524,7 @@ footer div .fab:hover {
   .backgroundImage {
     bottom: -60px;
   }
+
   .toggelNav {
     width: 120px;
     bottom: 95px;
@@ -547,7 +559,7 @@ footer div .fab:hover {
     padding: 70px 10px 10px 10px;
   }
 
-  .portfolioText h4{
+  .portfolioText h4 {
     font-size: 25px;
   }
 
@@ -570,7 +582,7 @@ footer div .fab:hover {
     margin: 20px 0px;
   }
 
-  .roundedBG{
+  .roundedBG {
     width: 100px;
     height: 100px;
     background: linear-gradient(110.3deg, rgb(238, 179, 123) 8.7%, rgb(216, 103, 77) 47.5%, rgb(114, 43, 54) 89.1%);
@@ -579,7 +591,7 @@ footer div .fab:hover {
     bottom: -50px;
     right: 0px;
     z-index: -1;
-   }
+  }
 
 
   .featuredProjects {
@@ -623,7 +635,9 @@ footer div .fab:hover {
 
   .carousel img {
     border-radius: 10px;
+    height: 240px;
   }
+
   .carousel a span {
     width: 40px;
     height: 25px;

@@ -8,7 +8,7 @@
 body {
   min-height: 100vh;
   padding: 10px 5px 10px 20px;
-  color: #212e3bc9;
+  color: #212e3be8;
   margin: auto;
   background-image: linear-gradient(to right, #e2e3ec, #e2e3ec1e),
     url(./photos/bgLogo.png);
@@ -19,7 +19,7 @@ body {
   z-index: -1;
   box-shadow: rgba(139, 139, 139, 0.25) 0px 30px 60px -12px inset,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-  transition: 1s ease-in-out;
+  transition: .5s ease-in-out;
 }
 
 
@@ -32,10 +32,11 @@ body {
   width: 130%;
   height: 140px;
   background: url(./photos/pngegg.png), rgb(233, 233, 233);
-  background-position:95% 88%;
+  background-position: 95% 88%;
   background-size: 200;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
 /* ------hamburger menu ---------*/
 
 .menu-toggle {
@@ -58,18 +59,23 @@ body {
   background: #b9811f;
   transition: all 0.3s ease;
 }
+
 .menu-toggle-bar.menu-toggle-bar--top {
   transform: translate(0, -8px);
 }
+
 .menu-toggle-bar.menu-toggle-bar--bottom {
   transform: translate(0, 8px);
 }
+
 .nav-open .menu-toggle-bar.menu-toggle-bar--top {
   transform: translate(0, 0) rotate(45deg);
 }
+
 .nav-open .menu-toggle-bar.menu-toggle-bar--middle {
   opacity: 0;
 }
+
 .nav-open .menu-toggle-bar.menu-toggle-bar--bottom {
   transform: translate(0, 0) rotate(-45deg);
 }
@@ -126,7 +132,7 @@ nav,
   letter-spacing: 2px;
 }
 
-.homeNav{
+.homeNav {
   font-size: 40px;
 }
 
@@ -275,6 +281,7 @@ main {
 .getInTouch:hover {
   background-color: #9e7329;
 }
+
 .getInTouch a {
   text-decoration: none;
   color: #fffffff5;
@@ -293,14 +300,13 @@ main {
   border-end-start-radius: 50%;
   transition: 0.5s ease-in-out;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 1.5px 4px;
-
 }
 
 .themeIcon {
   position: fixed;
   right: 0px;
   top: 100px;
-  
+
 }
 
 .socialMediaIcon {
@@ -328,7 +334,6 @@ main {
   border-start-start-radius: 50%;
   border-end-start-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 1.5px 4px;
-
 }
 
 /*** footer ***/
@@ -393,6 +398,7 @@ footer div .fab:hover {
   body {
     padding: 10px 15px;
   }
+
   .toggelNav {
     width: 120px;
     bottom: 95px;
@@ -403,7 +409,7 @@ footer div .fab:hover {
     font-size: large;
   }
 
- .toggelNav .homeNav{
+  .toggelNav .homeNav {
     font-size: 25px;
   }
 
@@ -455,7 +461,7 @@ footer div .fab:hover {
     letter-spacing: 0.2px;
     text-align: justify;
     width: 90%;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
   }
 
   .themeIcon .fas {

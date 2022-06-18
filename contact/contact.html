@@ -1,108 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My portfolio</title>
-    <link rel="stylesheet" href="contact.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
 
-  <body>
-    <header>
-      <nav>
-        <div class="leftNav">
-          <div class="navDecoLine"></div>
-          <div class="navDecoLine"></div>
-          <h3>NR developer</h3>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My portfolio</title>
+  <link rel="stylesheet" href="contact.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet" />
+</head>
 
-        <div class="middleSectionNav">
+<body>
+  <header>
+    <nav>
+      <div class="leftNav">
+        <div class="navDecoLine"></div>
+        <div class="navDecoLine"></div>
+        <h3>NR developer</h3>
+      </div>
+
+      <div class="middleSectionNav">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../about/about.html">About</a></li>
+        <li><a href="../work/work.html">Work</a></li>
+        <li><a href="#">Contact</a></li>
+      </div>
+      <div class="toggelNav">
+        <div class="subToggelNav">
           <li><a href="../index.html">Home</a></li>
-          <li><a href="../about/about.html">About</a></li>
+          <li><a href="../about/about.html">about</a></li>
           <li><a href="../work/work.html">Work</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a class="contactNav" href="#">Contact</a></li>
         </div>
-        <div class="toggelNav">
-          <div class="subToggelNav">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../about/about.html">about</a></li>
-            <li><a href="../work/work.html">Work</a></li>
-            <li><a class="contactNav" href="#">Contact</a></li>
+      </div>
+
+      <div class="rightNav">
+        <div class="container">
+          <a id="menu-toggle" class="menu-toggle">
+            <span class="menu-toggle-bar menu-toggle-bar--top"></span>
+            <span class="menu-toggle-bar menu-toggle-bar--middle"></span>
+            <span class="menu-toggle-bar menu-toggle-bar--bottom"></span>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="mainContact">
+      <div class="subMainContactLeft">
+        <div class="contactText">
+          <div class="decoLine"></div>
+          <h4>contact</h4>
+        </div>
+
+        <h1 class="workedOnText">
+          Let's work <br />
+          together
+        </h1>
+        <p class="description">
+          If you have a general enquiry, please drop me an email. If you have
+          a project enquiry, please kindly fill out this short form here.
+        </p>
+        <p><i class="far fa-envelope"></i> nasimreza72@yahoo.com</p>
+        <p><i class="fas fa-phone-alt"></i> +49 160 6305200</p>
+        <p> <span class="pinEmoji">📍</span> Stockholmer Straße 33, 13359, Berlin</i></p>
+
+        <div class="roundedBG"></div>
+        <div class="roundedBG2"></div>
+        <div class="roundedBG3"></div>
+        <div class="roundedBG4"></div>
+        <div class="roundedBG5"></div>
+        <div class="roundedBG6"></div>
+      </div>
+
+      <div class="subMainContactRight">
+
+        <form action="" method="get" class="form-contact">
+          <div class="form-name">
+            <label for="name">Name: </label> <br>
+            <input type="text" name="name" id="name" required>
           </div>
-        </div>
-
-        <div class="rightNav">
-          <div class="container">
-            <a id="menu-toggle" class="menu-toggle">
-              <span class="menu-toggle-bar menu-toggle-bar--top"></span>
-              <span class="menu-toggle-bar menu-toggle-bar--middle"></span>
-              <span class="menu-toggle-bar menu-toggle-bar--bottom"></span>
-            </a>
+          <div class="form-email">
+            <label for="email">Email: </label> <br>
+            <input type="email" name="email" id="email" required>
           </div>
-        </div>
-      </nav>
-    </header>
-
-    <main>
-      <div class="mainContact">
-        <div class="subMainContactLeft">
-          <div class="contactText">
-            <div class="decoLine"></div>
-            <h4>contact</h4>
+          <div class="form-message">
+            <label for="message">Message: </label> <br>
+            <textarea name="message" id="message" spellcheck="false"></textarea>
           </div>
-
-          <h1 class="workedOnText">
-            Let's work <br />
-            together
-          </h1>
-          <p class="description">
-            If you have a general enquiry, please drop me an email. If you have
-            a project enquiry, please kindly fill out this short form here.
-          </p>
-          <p><i class="far fa-envelope"></i> nasimreza72@yahoo.com</p>
-          <p><i class="fas fa-phone-alt"></i> +49 160 6305200</p>
-          <p> <span class="pinEmoji">📍</span> Stockholmer Straße 33, 13359, Berlin</i></p>
-
-          <div class="roundedBG"></div>
-          <div class="roundedBG2"></div>
-          <div class="roundedBG3"></div>
-          <div class="roundedBG4"></div>
-          <div class="roundedBG5"></div>
-          <div class="roundedBG6"></div>
-        </div>
-
-        <div class="subMainContactRight">
-
-          <form action="" method="get" class="form-contact">
-            <div class="form-name">
-              <label for="name">Name: </label> <br>
-              <input type="text" name="name" id="name" required>
-            </div>
-            <div class="form-email">
-              <label for="email">Email: </label> <br>
-              <input type="email" name="email" id="email" required>
-            </div>
-            <div class="form-message">
-              <label for="message">Message: </label> <br>
-              <textarea name="message" id="message" spellcheck="false"></textarea>
-            </div>
-            <div class="form-submitButton">
-              <input type="submit" value="Send Message">
-            </div>
-          </form>
+          <div class="form-submitButton">
+            <input type="submit" value="Send Message">
+          </div>
+        </form>
       </div>
 
       <!-- ///////// Theme Switch ///////// -->
@@ -114,75 +108,78 @@
 
       <div class="socialMediaIcon">
         <p>
-          <a href="#"><i class="fab fa-github-alt"></i></a>
+          <a href="https://github.com/nasimreza72" target="_blank"><i class="fab fa-github-alt"></i></a>
         </p>
         <p>
-          <a href="#"><i class="fas fa-at"></i></a>
+          <a href="https://www.yahoo.com/nasimreza72@yahoo.com" target="_blank"><i class="fas fa-at"></i></a>
         </p>
         <p>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www.linkedin.com/in/nasim-reza-37516964" target="_blank"><i
+              class="fab fa-linkedin-in"></i></a>
         </p>
       </div>
-    </main>
 
-    <div class="backgroundImage"></div>
+  </main>
 
-    <footer>
-      <div class="sub-footer">
-        <div>
-          <i class="fab fa-html5">
-            <p>html</p>
-          </i>
-        </div>
-        <div>
-          <i class="fab fa-css3">
-            <p>css</p>
-          </i>
-        </div>
+  <div class="backgroundImage"></div>
 
-        <div>
-          <i class="fab fa-js">
-            <p>javaScript</p>
-          </i>
-        </div>
-        <div>
-          <i class="fab fa-react">
-            <p>react</p>
-          </i>
-        </div>
-        <div>
-          <i class="fab fa-node-js">
-            <p>node</p>
-          </i>
-        </div>
-        <div>
-          <i class="fab fa-npm">
-            <p>express</p>
-          </i>
-        </div>
-        <div>
-          <i class="fa fab fa-database">
-            <p>mongoDB</p>
-          </i>
-        </div>
-        <div>
-          <i class="fab fa-sass">
-            <p>sass</p>
-          </i>
-        </div>
-        <div>
-          <i class="fab fa-bootstrap">
-            <p>bootstrap</p>
-          </i>
-        </div>
-        <div>
-          <i class="fab fa-github">
-            <p>github</p>
-          </i>
-        </div>
+  <footer>
+    <div class="sub-footer">
+      <div>
+        <i class="fab fa-html5">
+          <p>html</p>
+        </i>
       </div>
-    </footer>
+      <div>
+        <i class="fab fa-css3">
+          <p>css</p>
+        </i>
+      </div>
 
-    <script src="./contact.js"></script>
-  </body>
+      <div>
+        <i class="fab fa-js">
+          <p>javaScript</p>
+        </i>
+      </div>
+      <div>
+        <i class="fab fa-react">
+          <p>react</p>
+        </i>
+      </div>
+      <div>
+        <i class="fab fa-node-js">
+          <p>node</p>
+        </i>
+      </div>
+      <div>
+        <i class="fab fa-npm">
+          <p>express</p>
+        </i>
+      </div>
+      <div>
+        <i class="fa fab fa-database">
+          <p>mongoDB</p>
+        </i>
+      </div>
+      <div>
+        <i class="fab fa-sass">
+          <p>sass</p>
+        </i>
+      </div>
+      <div>
+        <i class="fab fa-bootstrap">
+          <p>bootstrap</p>
+        </i>
+      </div>
+      <div>
+        <i class="fab fa-github">
+          <p>github</p>
+        </i>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./contact.js"></script>
+</body>
+
 </html>
