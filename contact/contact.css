@@ -314,19 +314,20 @@ main {
   font-size: 25px;
  }
 
- .roundedBG{
+ .roundedBG {
   width: 150px;
   height: 150px;
   background: linear-gradient(110.3deg, rgb(238, 179, 123) 8.7%, rgb(216, 103, 77) 47.5%, rgb(114, 43, 54) 89.1%);
   border-radius: 50%;
   position: absolute;
-  bottom: -30px;
-  right: -30px;
+  bottom: 0px;
+  right: -50px;
   z-index: -1;
- }
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
 
 
- .roundedBG2{
+.roundedBG2 {
   width: 50px;
   height: 50px;
   background: rgba(93, 197, 98, 0.863);
@@ -335,9 +336,10 @@ main {
   bottom: 130px;
   right: 180px;
   z-index: -1;
- }
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
 
- .roundedBG3{
+.roundedBG3 {
   width: 30px;
   height: 30px;
   background: rgba(212, 195, 98, 0.801);
@@ -346,9 +348,9 @@ main {
   bottom: 360px;
   right: 280px;
   z-index: -1;
- }
+}
 
- .roundedBG4{
+.roundedBG4 {
   width: 45px;
   height: 45px;
   background: rgba(27, 104, 128, 0.541);
@@ -357,9 +359,10 @@ main {
   bottom: 480px;
   right: 80px;
   z-index: -1;
- }
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
 
- .roundedBG5{
+.roundedBG5 {
   width: 55px;
   height: 55px;
   background: rgba(222, 173, 245, 0.541);
@@ -368,10 +371,11 @@ main {
   bottom: 30px;
   left: 80px;
   z-index: -1;
- }
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
 
 
- .roundedBG6{
+.roundedBG6 {
   width: 25px;
   height: 25px;
   background: rgba(185, 110, 39, 0.767);
@@ -380,7 +384,7 @@ main {
   top: 80px;
   left: 80px;
   z-index: -1;
- }
+}
 
 
 .contactText {

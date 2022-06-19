@@ -15,7 +15,7 @@ nightMode.addEventListener("click", (e) => {
     element.style.border = "1px solid white";
   });
 
-  document.querySelector(".projectDescription").style.color = "white";
+  document.querySelectorAll(".projectDescription").forEach((element) => { element.style.color = "white" });
 
   document.querySelectorAll(".projectLink a").forEach((element) => {
     element.style.color = "white";
