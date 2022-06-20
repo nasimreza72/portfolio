@@ -343,12 +343,14 @@ nav div li a:hover {
   position: fixed;
   right: 0px;
   top: 100px;
+  z-index: 2;
 }
 
 .socialMediaIcon {
   position: fixed;
   right: 0px;
   top: 250px;
+  z-index: 2;
 }
 
 .socialMediaIcon p a {
